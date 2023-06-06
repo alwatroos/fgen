@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "author": "alwatroos",
   "repository": "https://github.com/alwatroos/fgen",
+  "keywords": ["file", "template", "generator", "ejs", "cli", "typescript"],
   "license": "MIT",
   "main": "dist/index.js",
   "bin": {
