@@ -1,8 +1,8 @@
 {
   "name": "@alwatroos/fgen",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "alwatroos",
-  "repository": "",
+  "repository": "https://github.com/alwatroos/fgen",
   "license": "MIT",
   "main": "dist/index.js",
   "bin": {
