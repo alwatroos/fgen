@@ -28,6 +28,6 @@ export const program = new Command()
     "-c, --config <path>",
     "Path to fgen config => fgen.config.json (if not passed then using default config)"
   )
-  .option("-g, --generate <template>", "List directory contents")
+  .option("-g, --generate <template>", "Generates component using given template")
   .option("-ls, --list", "Lists all available templates")
-  .option("-v, --variable <value>", "repeatable value", collectVariables, {});
+  .option("-v, --variable <value>", "Repeatable values passed as variables for EJS engine", collectVariables, {});

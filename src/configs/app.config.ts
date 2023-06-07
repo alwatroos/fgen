@@ -4,16 +4,26 @@ import { IAppConfig } from "../models";
 import { OptionValues } from "commander";
 import { debug } from "../utils";
 import { commands } from "../commands";
-import { DEFAULT_CONFIG_NAME } from "./variables.config";
+import {
+  DEFAULT_CONFIG_NAME,
+  DEFAULT_SRC_DIR_NAME,
+  DEFAULT_TEMPLATE_SRC_DIR_NAME,
+  WORK_DIR,
+} from "./variables.config";
 
 export const appConfig: IAppConfig = {
   workDir: __dirname,
-  templateSrc: join(__dirname, "templates/"),
-  srcDir: join(__dirname, "src/"),
+  templateSrc: join(__dirname, DEFAULT_TEMPLATE_SRC_DIR_NAME),
+  srcDir: join(__dirname, DEFAULT_SRC_DIR_NAME),
   debugMode: false,
   availableTemplates: [],
   fileNamePattern: "pascal-case",
-  contentNamePattern: "camel-case"
+  contentNamePattern: "camel-case",
+};
+
+export const setAppConfigDefaults = () => {
+  appConfig.workDir = WORK_DIR;
+  appConfig.templateSrc = join(WORK_DIR, DEFAULT_TEMPLATE_SRC_DIR_NAME);
 };
 
 export const completeConfiguration = (options: OptionValues) => {

@@ -1,4 +1,5 @@
 #! /usr/bin/env node
+import "./extensions";
 import { textSync as figletTextSync } from "figlet";
 import { WORK_DIR, appConfig, completeConfiguration, program } from "./configs";
 import { commands } from "./commands";

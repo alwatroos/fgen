@@ -1,6 +1,6 @@
 {
   "name": "@alwatroos/fgen",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "alwatroos",
   "repository": "https://github.com/alwatroos/fgen",
   "keywords": ["file", "template", "generator", "ejs", "cli", "typescript"],
