@@ -1,9 +1,19 @@
 {
   "name": "@alwatroos/fgen",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "author": "alwatroos",
   "repository": "https://github.com/alwatroos/fgen",
-  "keywords": ["file", "template", "generator", "ejs", "cli", "typescript"],
+  "keywords": [
+    "file",
+    "template",
+    "generator",
+    "ejs",
+    "cli",
+    "typescript",
+    "javascript",
+    "commander",
+    "figlet"
+  ],
   "license": "MIT",
   "main": "dist/index.js",
   "bin": {
