@@ -1,6 +1,6 @@
 {
   "name": "@alwatroos/fgen",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "alwatroos",
   "repository": "https://github.com/alwatroos/fgen",
   "keywords": ["file", "template", "generator", "ejs", "cli", "typescript"],
@@ -12,7 +12,8 @@
   "scripts": {
     "build": "tsc",
     "build:watch": "tsc --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "yarn build"
   },
   "devDependencies": {
     "@types/ejs": "^3.1.2",
